@@ -9,12 +9,22 @@
 	<meta http-equiv="Refresh" content="3;url=https://www.rootone-ai-shopping-mall.link/" /> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <style type="text/css">
-	    img {
-		height: auto;
-		width: 30%;
-		vertical-align: middle; 
-		horizontal-align: middle;
-	   }
+	    body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%; /* 전체 화면을 차지하도록 설정 */
+            }
+            div {
+                display: grid;
+                place-items: center; /* 수평 및 수직 가운데 정렬 */
+                height: 100%; /* 부모 컨테이너 높이를 100%로 설정 */
+            }
+            img {
+                display: block;
+                width: 30%; /* 원하는 크기로 설정 */
+                max-width: 300px; /* 최대 크기를 제한 */
+            }
+
         </style>
 
     </head>
