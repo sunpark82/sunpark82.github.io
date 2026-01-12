@@ -1,37 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOTONE AI</title>
+    <style>
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;     /* cover 또는 contain */
+            object-position: center;
+        }
 
-        <link rel="logo icon" href="./logo16.ico" type="image/x-icon">
-        <title>ROOT ONE AI</title>
-	<!-- meta http-equiv="Refresh" content="3;url=https://www.rootone-ai-shopping-mall.link/" / --> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <style type="text/css">
-	    body, html {
-                margin: 0;
-                padding: 0;
-                height: 100%; /* 전체 화면을 차지하도록 설정 */
-            }
-            div {
-                display: grid;
-                place-items: center; /* 수평 및 수직 가운데 정렬 */
-                height: 100%; /* 부모 컨테이너 높이를 100%로 설정 */
-            }
-            img {
-                display: block;
-                width: 30%; /* 원하는 크기로 설정 */
-                max-width: 300px; /* 최대 크기를 제한 */
-            }
+        .land { display: none; }
 
-        </style>
-
-    </head>
-    <body>
-	<div>
-	      <img src="rootoneai_transparent.png" alt="RootOneAI" />
-	</div>
-    </body>
+        @media screen and (orientation: landscape) {
+            .port { display: none; }
+            .land { display: block; }
+        }
+    </style>
+</head>
+<body>
+    <img src="home_port.jpg" class="port" alt="">
+    <img src="home_land.jpg" class="land" alt="">
+</body>
 </html>
-
